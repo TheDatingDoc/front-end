@@ -33,28 +33,44 @@ const Navbar = () => {
         </div>
         <ul className="sidebar-links">
           <li>
-            <a href="/home">HOME</a>
+            <Link to="/" onClick={toggleMenu}>
+              HOME
+            </Link>
           </li>
           <li>
-            <a href="/about">ABOUT</a>
+            <Link to="/about" onClick={toggleMenu}>
+              ABOUT
+            </Link>
           </li>
           <li>
-            <a href="/services">SERVICES</a>
+            <Link to="/services" onClick={toggleMenu}>
+              SERVICES
+            </Link>
           </li>
           <li>
-            <a href="/blog">BLOG</a>
+            <Link to="/blog" onClick={toggleMenu}>
+              BLOG
+            </Link>
           </li>
           <li>
-            <a href="/media">MEDIA</a>
+            <Link to="/media" onClick={toggleMenu}>
+              MEDIA
+            </Link>
           </li>
           <li>
-            <a href="/shop">SHOP</a>
+            <Link to="/shop" onClick={toggleMenu}>
+              SHOP
+            </Link>
           </li>
           <li>
-            <a href="/contact">CONTACT</a>
+            <Link to="/contact" onClick={toggleMenu}>
+              CONTACT
+            </Link>
           </li>
           <li>
-            <a href="/login">LOGIN / SIGNUP</a>
+            <Link to="/login" onClick={toggleMenu}>
+              LOGIN / SIGNUP
+            </Link>
           </li>
         </ul>
         <div className="social-media-links">
