@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={logo} alt="The Dating Doc Logo" />
+        <Link to="/">
+          <img src={logo} alt="The Dating Doc Logo" />
+        </Link>
       </div>
       <div className="menu-button" onClick={toggleMenu}>
         MENU
