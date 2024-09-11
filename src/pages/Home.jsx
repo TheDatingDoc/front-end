@@ -1,6 +1,8 @@
 import React from "react";
 import placeholderImage from "../assets/images/homepage-video-placeholder.png";
 import "../assets/css/HomePage.css";
+import MissionSection from "../components/Mission";
+import WhatWeDo from "../components/WhatWeDo";
 
 const Home = () => {
   return (
@@ -33,6 +35,8 @@ const Home = () => {
           <a href="/events">BUY EVENT TICKET</a>
         </li>
       </ul>
+      <MissionSection />
+      <WhatWeDo />
     </div>
   );
 };
