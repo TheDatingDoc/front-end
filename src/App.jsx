@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 // create end point for graphQL
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3000/graphql", // point to our server's graphQL API
 });
 
 // create middleware for JWT token that will attach to every request an `authorization` header

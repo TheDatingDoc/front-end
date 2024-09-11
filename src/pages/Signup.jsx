@@ -1,0 +1,11 @@
+import { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
+import Auth from "../utils/auth";
+import NameForm from "../components/signup-form-components/NameForm";
+import BirthdayForm from "../components/signup-form-components/BirthdayForm";
+import GenderForm from "../components/signup-form-components/GenderForm";
+import InterestedIn from "../components/signup-form-components/InterestedInForm";
+import LookingForForm from "../components/signup-form-components/LookingForForm";
+import UploadPhotoForm from "../components/signup-form-components/UploadPhotoForm";
+import InterestsForm from "../components/signup-form-components/InterestsForm";
