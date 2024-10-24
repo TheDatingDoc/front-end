@@ -68,7 +68,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/login" onClick={toggleMenu}>
+            <Link to="/signup" onClick={toggleMenu}>
               LOGIN / SIGNUP
             </Link>
           </li>

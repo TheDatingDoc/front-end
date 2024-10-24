@@ -3,6 +3,7 @@ import placeholderImage from "../assets/images/homepage-video-placeholder.png";
 import "../assets/css/HomePage.css";
 import MissionSection from "../components/Mission";
 import WhatWeDo from "../components/WhatWeDo";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       </div>
       <ul className="homepage-links">
         <li>
-          <a href="/login">LOGIN / SIGN UP</a>
+          <Link to="/signup">LOGIN / SIGN UP</Link>
         </li>
         <li>
           <a href="/events">GO ON A DATE</a>

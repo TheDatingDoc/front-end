@@ -10,6 +10,7 @@ import LookingForForm from "../components/signup-form-components/LookingForForm"
 import UploadPhotoForm from "../components/signup-form-components/UploadPhotoForm";
 import InterestsForm from "../components/signup-form-components/InterestsForm";
 
+
 const Signup = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -62,7 +63,8 @@ const Signup = () => {
     }
   };
 
-  const handleNext = () => {
+  const handleNext = (newData) => {
+    setFormData({ ...formData, ...newData });
     setStep(step + 1);
   };
 
@@ -70,14 +72,14 @@ const Signup = () => {
     setStep(step - 1);
   };
 
-  // render components based on the current step
+  // Ensure onNext is passed properly here
   return (
     <div className="signup-container">
       {step === 1 && (
         <NameForm
           formData={formData}
           handleChange={handleChange}
-          handleNext={handleNext}
+          onNext={handleNext}  // This ensures the onNext is passed correctly
         />
       )}
 
@@ -141,3 +143,4 @@ const Signup = () => {
 };
 
 export default Signup;
+

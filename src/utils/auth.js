@@ -1,9 +1,9 @@
-import decode from "jwt-decode";
+import jwt_decode from "jwt-decode";
 
 class Auth {
   // decodes jwt from local storage
   getProfile() {
-    return decode(this.getToken());
+    return jwt_decode(this.getToken());
   }
   // check if user is logged in by checking local storage for token
   loggedIn() {
@@ -13,7 +13,7 @@ class Auth {
   }
   isTokenExpired(token) {
     // Decodes token and checks expiration time determined by the server
-    const decoded = decode(token);
+    const decoded = jwt_decode(token);
     // If expiration time is less than the current time (in seconds), the token is expired and we return `true`
     if (decoded.exp < Date.now() / 1000) {
       localStorage.removeItem("id_token");

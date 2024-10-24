@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-// Fetch all users
+// Fetch all users - for admin use
 export const GET_USERS = gql`
   query {
     users {
